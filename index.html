@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hadyah</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header class="header">
+    <div class="header-contact border p-2">
+      <div class="container">
+        <nav class="row align-items-center justify-content-center navbar-expand-lg">
+          <div class="col-lg-3 col-2 d-flex align-items-center">
+            <a class="navbar-brand logo d-none d-lg-block" href="index.html">
+              <img src="images/logo.svg" alt="">
+              <div class="bar-menu">
+                <a href="#" class="bars-show text-success d-flex align-items-center" data-bs-toggle="offcanvas"
+                  data-bs-target="#bars-munu" aria-controls="bars-munu">
+                  <i class="fa-solid fa-bars fa-lg"></i>
+                  <i class="fa-solid fa-angle-down ms-1"></i>
+                </a>
+              </div>
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+              aria-label="Toggle navigation">
+              <div class="hamburger">
+                <input type="checkbox" class="hamburger-init">
+                <div class="menu">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col-lg-6 col-8">
+            <div class="item-search">
+              <div class="input-group search">
+                <span class="input-group-text bg-white">
+                  <i class="fa fa-search text-secondary fa-sm"></i>
+                </span>
+                <input type="text" class="form-control border-start-0" placeholder=" Search products...">
+              </div>
+            </div>
+          </div>
+          <div class="cart d-block d-lg-none col-lg-3 col-2">
+            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+              class="text-white"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+          </div>
+          <div class="col-3">
+            <div class="navbar-collapse offcanvas-collapse" id="navbarSideCollapse">
+              <div class="logo d-flex align-items-end d-lg-none mb-4">
+                <a class="navbar-brand logo" href="index.html">
+                  <img src="images/logo.svg" alt="">
+                  <div class="phone-item">
+                    <a class="fs-4 fw-bolder" href="tel:123-456-7890">+ 123-456-7890</a>
+                  </div>
+                </a>
+              </div>
+              <div class="nav-link-item p-2 d-block d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#all-categories" class="fs-4">
+                  <i class="fa-solid fa-bars fa-lg text-success me-2"></i>All categories</a>
+                <nav class="list mt-4">
+                  <a class="nav-link active" href="#">Shipping and payment</a>
+                  <a class="nav-link" href="#">How to return</a>
+                  <a class="nav-link" href="#">About us</a>
+                  <a class="nav-link" href="#">Politics</a>
+                </nav>
+              </div>
+              <ul class="navbar-nav flex-row align-items-center ms-auto mb-lg-0 item-cart">
+                <li class="nav-item d-none d-lg-block heart">
+                  <a href="#"><i class="bi bi-heart fa-lg"></i></a>
+                </li>
+                <li class="d-none d-lg-block"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" href="#">
+                    <i class="fa-solid fa-cart-plus fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <a class="btn bg-white border shadow-sm dropdown-toggle" href="#" role="button"
+                      id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="images/svgexport-6 (1).svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">O‘zbekcha</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Русский</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#login" class="btn login px-5 px-sm-3">Войти</a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="nav-link-item p-2 shadow-sm d-none d-lg-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <nav class="d-flex list col-10">
+            <a class="nav-link active" href="#">Shipping and passsyment</a>
+            <a class="nav-link" href="#">How to return</a>
+            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="#">Politics</a>
+          </nav>
+          <div class="phone-item col-2 d-flex justify-content-end">
+            <a href="tel:123-456-7890">+ 123-456-7890</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+
+  <!-- start carousel-header -->
+  <div class="sidebar-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar border">
+            <ul class="list-unstyled ul-list">
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="category.html" class="link">
+                  <div class="head">
+                    <img src="images/side-img-1.png" alt="" class="me-2">
+                    <span> Vegetables and fruits</span>
+                  </div>
+                  <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+                <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#"> Vegetables</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Greens</a></li>
+                  <li><a href="#">Dried fruits</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9 mb-3">
+          <div class="carousel-header">
+            <div id="carouselslide" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators carousel-dots">
+                <button data-bs-target="#carouselslide" data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button data-bs-target="#carouselslide" data-bs-slide-to="3" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-content">
+                  <img src="images/carousel-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item carousel-content">
+                  <img src="images/carousel-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item carousel-content">
+                  <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item carousel-content">
+                  <img src="images/carousel-4.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <div class="carousel-arrow">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselslide"
+                  data-bs-slide="prev">
+                  <span aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselslide"
+                  data-bs-slide="next">
+                  <span aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End carousel-header -->
+
+  <!-- start category-card -->
+  <div class="category-card mt-5">
+    <div class="container">
+      <div class="title">
+        <h4 class="fw-bolder">Category <a href="#">View more <i class="fa-solid fa-angle-right m"></i></a></h4>
+      </div>
+      <div class="row mt-5">
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6 class="bg-danger text-white rounded-pill">-44 %</h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6 class="bg-danger text-white rounded-pill">-44 %</h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6></h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6></h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6></h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4 col-6 mb-3">
+          <div class="item-box border p-3 text-center">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+              <div class="d-flex justify-content-between align-items-center icon">
+                <h6></h6>
+                <span><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="img-box">
+                <img src="images/category-item-1.jpg" alt="">
+              </div>
+              <h5>25 490 UZS / 1 pc</h5>
+              <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End category-card -->
+
+  <!-- start offcanvas Basket -->
+  <div class="offcanvas_increment">
+    <div class="offcanvas offcanvas-end increment-bg" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header increment-header bg-light">
+        <h5>1 Category 399 сом</h5>
+        <button class="btn-close close-basket text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+      </div>
+      <div class="offcanvas-body increment-body">
+        <div class="item">
+          <div class="d-flex align-items-center justify-content-between border-bottom">
+            <div class="d-flex align-items-center">
+              <img src="images/category-item-1.jpg" alt="" class="img-fluid img-item">
+              <div class="title">
+                <h5 class="fw-bolder">Category name</h5>
+                <p class="mb-2 text-secondary">Tea Greenfield Earl Gray Fantasy</p>
+              </div>
+            </div>
+            <div class="delete-product">
+              <a href="#">
+                <span><i class="fa-solid fa-trash fa-lg text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-baseline mt-3">
+            <h6 class="fw-bolder">399 сом</h6>
+            <div class="d-flex bg-light justify-content-center align-items-center rounded-3">
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div id="counter">0</div>
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="d-flex align-items-center justify-content-between border-bottom">
+            <div class="d-flex align-items-center">
+              <img src="images/category-item-1.jpg" alt="" class="img-fluid img-item">
+              <div class="title">
+                <h5 class="fw-bolder">Category name</h5>
+                <p class="mb-2 text-secondary">Tea Greenfield Earl Gray Fantasy</p>
+              </div>
+            </div>
+            <div class="delete-product">
+              <a href="#">
+                <span><i class="fa-solid fa-trash fa-lg text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-baseline mt-3">
+            <h6 class="fw-bolder">399 сом</h6>
+            <div class="d-flex bg-light justify-content-center align-items-center rounded-3">
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div id="counter">0</div>
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="d-flex align-items-center justify-content-between border-bottom">
+            <div class="d-flex align-items-center">
+              <img src="images/category-item-1.jpg" alt="" class="img-fluid img-item">
+              <div class="title">
+                <h5 class="fw-bolder">Category name</h5>
+                <p class="mb-2 text-secondary">Tea Greenfield Earl Gray Fantasy</p>
+              </div>
+            </div>
+            <div class="delete-product">
+              <a href="#">
+                <span><i class="fa-solid fa-trash fa-lg text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-baseline mt-3">
+            <h6 class="fw-bolder">399 сом</h6>
+            <div class="d-flex bg-light justify-content-center align-items-center rounded-3">
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div id="counter">0</div>
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="d-flex align-items-center justify-content-between border-bottom">
+            <div class="d-flex align-items-center">
+              <img src="images/category-item-1.jpg" alt="" class="img-fluid img-item">
+              <div class="title">
+                <h5 class="fw-bolder">Category name</h5>
+                <p class="mb-2 text-secondary">Tea Greenfield Earl Gray Fantasy</p>
+              </div>
+            </div>
+            <div class="delete-product">
+              <a href="#">
+                <span><i class="fa-solid fa-trash fa-lg text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-baseline mt-3">
+            <h6 class="fw-bolder">399 сом</h6>
+            <div class="d-flex bg-light justify-content-center align-items-center rounded-3">
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div id="counter">0</div>
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="d-flex align-items-center justify-content-between border-bottom">
+            <div class="d-flex align-items-center">
+              <img src="images/category-item-1.jpg" alt="" class="img-fluid img-item">
+              <div class="title">
+                <h5 class="fw-bolder">Category name</h5>
+                <p class="mb-2 text-secondary">Tea Greenfield Earl Gray Fantasy</p>
+              </div>
+            </div>
+            <div class="delete-product">
+              <a href="#">
+                <span><i class="fa-solid fa-trash fa-lg text-danger"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-baseline mt-3">
+            <h6 class="fw-bolder">399 сом</h6>
+            <div class="d-flex bg-light justify-content-center align-items-center rounded-3">
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div id="counter">0</div>
+              <button class="btn px-3" id="">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="d-flex justify-content-between">
+            <h6>Delivery Fee</h6>
+            <h6>399 сом</h6>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Total</h6>
+            <h6>399 сом</h6>
+          </div>
+        </div>
+        <div class="add-product">
+          <button type="button" class="btn rounded-pill my-2 px-3" data-bs-toggle="modal" data-bs-target="#login">
+            Check Out
+            <i class="fa-solid fa-angle-right button-arrow ms-1"></i>
+          </button>
+        </div>
+      </div>
+      <div class="add-check">
+        <h5>399 сом</h5>
+        <button type="button" class="btn rounded-pill my-2 px-3" data-bs-toggle="modal" data-bs-target="#login">
+          Check Out
+          <i class="fa-solid fa-angle-right button-arrow ms-1"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- End offcanvas Basket -->
+
+  <!-- start bar-menu -->
+  <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="bars-munu" aria-labelledby="bars-munuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-secondary">All categories</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body overflow-visible p-0">
+      <div class="sidebar">
+        <ul class="list-unstyled ul-list">
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="category.html" class="link">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <ul class="list-unstyled sidebar-list bg-white border border-1 shadow-sm p-3">
+              <li><a href="#">All</a></li>
+              <li><a href="#"> Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Greens</a></li>
+              <li><a href="#">Dried fruits</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End bar-menu -->
+
+  <!-- start category_modal -->
+  <div class="modal fade category_modal" id="category_modal" tabindex="-1" aria-labelledby="category_modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content category_content">
+        <div class="modal-header border-0">
+          <ul class="nav list">
+            <li><a href="#">All CategoriesTea</a></li>
+            <li><a href="#">CoffeeCoffee</a></li>
+            <li><a href="#">CreamCoffee</a></li>
+            <li><a href="product.html">Jacobs 3in1 Intense 12g</a></li>
+          </ul>
+          <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="add-cart">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="show-category">
+                  <img src="images/category-item-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="box-cart text-center text-lg-start">
+                  <a href="#" class="d-flex justify-content-center justify-content-lg-start">
+                    <h6>Vanilla sugar Dr.Oetker 9g</h6>
+                    <i class="fa-solid fa-share-from-square ms-2"></i>
+                  </a>
+                  <h5 class="my-2">
+                    <strong> 10 990</strong>
+                    <span class="text-dark fw-bolder">UZS</span>
+                    <span>(10 990 UZS for 1pc)</span>
+                  </h5>
+                  <div class="mt-3">
+                    <a href="#" class="btn btn-outline-success rounded-3 px-5">
+                      <i class="fa-solid fa-cart-plus fa-lg"></i>
+                      Add to cart
+                    </a>
+                  </div>
+                  <div class="mt-3">
+                    <a href="#" class="bg-light text-success p-2 px-4">
+                      <i class="fa-solid fa-heart fa-lg me-2"></i>
+                      Favorite products
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h6 class="fw-lighter">Similar products</h6>
+              <div class="category-card">
+                <div class="row mt-3 overflow-scroll">
+                  <div class="col-xl-3 col-md-4 col-6 mb-3">
+                    <div class="item-box border p-3 text-center">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+                        <div class="d-flex justify-content-between align-items-center icon">
+                          <h6 class="bg-danger text-white rounded-pill">-44 %</h6>
+                          <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="img-box">
+                          <img src="images/category-item-1.jpg" alt="">
+                        </div>
+                        <h5>25 490 UZS / 1 pc</h5>
+                        <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-4 col-6 mb-3">
+                    <div class="item-box border p-3 text-center">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+                        <div class="d-flex justify-content-between align-items-center icon">
+                          <h6 class="bg-danger text-white rounded-pill">-44 %</h6>
+                          <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="img-box">
+                          <img src="images/category-item-1.jpg" alt="">
+                        </div>
+                        <h5>25 490 UZS / 1 pc</h5>
+                        <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-4 col-6 mb-3">
+                    <div class="item-box border p-3 text-center">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+                        <div class="d-flex justify-content-between align-items-center icon">
+                          <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="img-box">
+                          <img src="images/category-item-1.jpg" alt="">
+                        </div>
+                        <h5>25 490 UZS / 1 pc</h5>
+                        <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-4 col-6 mb-3">
+                    <div class="item-box border p-3 text-center">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+                        <div class="d-flex justify-content-between align-items-center icon">
+                          <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="img-box">
+                          <img src="images/category-item-1.jpg" alt="">
+                        </div>
+                        <h5>25 490 UZS / 1 pc</h5>
+                        <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-md-4 col-6 mb-3">
+                    <div class="item-box border p-3 text-center">
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#category_modal">
+                        <div class="d-flex justify-content-between align-items-center icon">
+                          <span><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="img-box">
+                          <img src="images/category-item-1.jpg" alt="">
+                        </div>
+                        <h5>25 490 UZS / 1 pc</h5>
+                        <p>Tea Greenfield Earl Gray Fantasy 100g</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End category_modal -->
+
+  <!-- start login-modal- -->
+  <div class="modal fade login-modal" id="login" aria-hidden="true" aria-labelledby="loginLabel" tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content login-content bg-light">
+        <div class="modal-header border-0">
+          <div class="title">
+            <h3 class="modal-title"></h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body border-0 pt-0 pl-3 login-body">
+          <div class="logo">
+            <img src="images/logo.svg" alt="" class=" d-flex m-auto mb-4">
+          </div>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Name" required="">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-12">
+                <input type="password" class="form-control" placeholder="password" required="">
+              </div>
+            </div>
+            <div class="d-flex my-3">
+              <a href="check-out.html" class="btn btn-success w-100">Send</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login-modal -->
+
+  <!-- start all-category-modal  -->
+  <div class="modal all-categories" id="all-categories" tabindex="-1" aria-labelledby="all-categoriesLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="all-categoriesLabel">All categories</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body categories-body">
+          <div class="collapse-item">
+            <a href="#" class="link d-flex justify-content-between p-2" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <div class="collapse" id="collapseExample">
+              <ul class="list-unstyled p-2 list">
+                <li><a href="#">All</a></li>
+                <li><a href="#"> Vegetables</a></li>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Greens</a></li>
+                <li><a href="#">Dried fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse-item">
+            <a href="#" class="link d-flex justify-content-between p-2" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2">
+              <div class="head">
+                <img src="images/side-img-1.png" alt="" class="me-2">
+                <span> Vegetables and fruits</span>
+              </div>
+              <span class="text-secondary"><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <div class="collapse" id="collapseExample-2">
+              <ul class="list-unstyled p-2 list">
+                <li><a href="#">All</a></li>
+                <li><a href="#"> Vegetables</a></li>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Greens</a></li>
+                <li><a href="#">Dried fruits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End all-category-modal  -->
+
+  <!-- start footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-3">
+          <ul class="nav list d-none d-sm-flex">
+            <li><a class="nav-link active" href="#">Shipping and payment</a></li>
+            <li><a class="nav-link" href="#">How to return</a></li>
+            <li><a class="nav-link" href="#">About us</a></li>
+            <li><a class="nav-link" href="#">Politics</a></li>
+          </ul>
+          <div class="col-12 contact mt-3">
+            <p>On all questions you can contact us at any convenient time by phone: <a href="tel:+998712001112"><i
+                  class="fa fa-phone"></i>
+                +998 71 200-11-12</a>
+              <br>Email: <a href="mailto:support@lebazar.uz">support@lebazar.uz</a>
+            </p>
+            <p>
+              2016 Online Shopping LeBazar.uz: Grocery, Cosmetics and More..
+              Delivery of products is carried out within Tashkent. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3 d-flex justify-content-lg-end">
+          <div class="row store">
+            <div class="col-5 phone">
+              <img src="images/phone.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-7 app">
+              <p>Install our app and make shopping easily</p>
+              <a href="#"><img src="images/google-play.png" alt=""></a>
+              <a href="#"><img src="images/app-store.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- start footer -->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
